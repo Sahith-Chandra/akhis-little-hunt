@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "title": "Akhi’s Little Hunt",
+  "birthday": {
+    "name": "Akhi",
+    "fullName": "Akhila",
+    "age": 23,
+    "date": "2026-11-09"
+  },
+  "intro": {
+    "poster": "media/dora-birthday-intro-poster.png",
+    "video": "media/dora-birthday-intro.mp4",
+    "captions": "media/dora-birthday-intro.vtt",
+    "heading": "A birthday message for Akhila · 23",
+    "transcript": [
+      { "speaker": "Dora", "voice": "you", "line": "¡Hola, Akhila! Happy 23rd birthday!" },
+      { "speaker": "Dora", "voice": "you", "line": "Every little step has helped you grow into who you are today. And there are so many wonderful adventures still ahead." },
+      { "speaker": "Dora", "voice": "you", "line": "Today is for your favorite things, sweet surprises, and people who love you." },
+      { "speaker": "Dora", "voice": "you", "line": "Ready, Akhila? Let’s go on an adventure!" }
+    ]
+  },
+  "welcome": {
+    "companionCharacter": "aang",
+    "animationCue": "enter",
+    "voiceLines": ["Hi Akhi! Happy birthday! Keep your first envelope close, and tap for a hint whenever you need one."]
+  },
+  "stops": [
+    {
+      "id": "room",
+      "home": true,
+      "number": 1,
+      "element": null,
+      "title": "A small beginning",
+      "clue": "Your first surprise is tucked away, where I rest my head at the end of the day.",
+      "hints": [
+        "You don’t need to leave this room for this one.",
+        "Think soft. Think where heads go at night.",
+        "Look under the pillow."
+      ],
+      "unlock": "code",
+      "code": "TOGETHER",
+      "codePrompt": "The gift tag has a word on it.",
+      "lat": null, "lng": null, "radiusM": 40,
+      "photoPrompt": "You and your first surprise.",
+      "foundLabel": "Beach-photo puzzle",
+      "companionCharacter": "toph",
+      "animationCue": "success",
+      "sfxPrompt": "Soft pillow whoosh followed by a gentle magical sparkle, cozy and short",
+      "sfxSeconds": 2,
+      "voiceLines": [
+        "Envelope one! Your first surprise is tucked away, where I rest my head at the end of the day."
+      ]
+    },
+    {
+      "id": "t4",
+      "number": 2,
+      "element": "water",
+      "title": "Follow the water",
+      "clue": "Winter in the name, royalty in the tea. Your usual order, remembered by me.",
+      "hints": [
+        "This one is something to drink.",
+        "Your favorite boba place — the one with a number in its name.",
+        "T4: Wintermelon Milk Tea with royal tea instead of Earl Grey."
+      ],
+      "unlock": "manual",
+      "manualLabel": "I have my tea",
+      "lat": null, "lng": null, "radiusM": 40,
+      "photoPrompt": "Cheers with your boba.",
+      "foundLabel": "Your usual T4 order",
+      "companionCharacter": "katara",
+      "animationCue": "success",
+      "sfxPrompt": "Playful boba straw slurp with ice cubes rattling in a plastic cup",
+      "sfxSeconds": 2,
+      "voiceLines": [
+        "Envelope two! Winter in the name, royalty in the tea. Your usual order, remembered by me."
+      ]
+    },
+    {
+      "id": "class",
+      "number": null,
+      "intermission": true,
+      "title": "Class break",
+      "clue": "Even an Avatar has classes. Your adventure continues afterward.",
+      "resumeLabel": "I’m out of class",
+      "resumeNote": "The hunt picks back up around 2. No rush.",
+      "companionCharacter": "aang",
+      "animationCue": "idle",
+      "sfxPrompt": "Soft, sleepy little leopard snore, cute and quiet",
+      "sfxSeconds": 3,
+      "voiceLines": ["Go be responsible, I’ll nap till 2."]
+    },
+    {
+      "id": "lunch",
+      "number": 3,
+      "element": null,
+      "title": "An envelope from your people",
+      "clue": "Even an Avatar needs to eat. On Monroe, build your favorite bowl—one ingredient at a time.",
+      "hints": [
+        "Your friends know you’re hungry after class.",
+        "A place on Monroe where you build your bowl down the line.",
+        "Qdoba on Monroe."
+      ],
+      "lunchAlternative": {
+        "pizza": {
+          "clue": "Even an Avatar needs to eat. Your friends picked a slice of something you love — follow them to {place}.",
+          "hints": ["Your friends know you’re hungry after class.", "Round, cheesy, cut into triangles.", "Pizza at {place}."]
+        }
+      },
+      "unlock": "manual",
+      "manualLabel": "We’re at lunch",
+      "lat": 44.568136, "lng": -123.27539, "radiusM": 40,
+      "photoPrompt": "The lunch crew.",
+      "foundLabel": "Lunch with friends",
+      "companionCharacter": "aang",
+      "completeCharacter": "applejack",
+      "animationCue": "success",
+      "sfxPrompt": "Sizzling skillet on a hot grill, short and appetizing",
+      "sfxSeconds": 2,
+      "voiceLines": [
+        "Envelope three — from your people! Even an Avatar needs to eat. On Monroe, build your favorite bowl, one ingredient at a time."
+      ]
+    },
+    {
+      "id": "tree",
+      "number": 4,
+      "element": "earth",
+      "title": "A place with roots",
+      "clue": "We’ve both called this place home. One of your favorites still stands here, putting down roots.",
+      "hints": [
+        "Somewhere you both used to live.",
+        "The Retreat — and something tall and green you love there.",
+        "Your favorite tree at the Retreat."
+      ],
+      "unlock": "code",
+      "code": "SPOTTED",
+      "codePrompt": "Someone new is waiting by the tree. Check their tag.",
+      "lat": null, "lng": null, "radiusM": 30,
+      "photoPrompt": "You, your tree, and your new spotted friend.",
+      "foundLabel": "Leopard plush",
+      "companionCharacter": "toph",
+      "animationCue": "success",
+      "sfxPrompt": "Leaves rustling in a light breeze with soft birdsong",
+      "sfxSeconds": 3,
+      "voiceLines": [
+        "Envelope four! We’ve both called this place home. One of your favorites still stands here, putting down roots."
+      ]
+    },
+    {
+      "id": "bombs-away",
+      "number": 5,
+      "element": null,
+      "title": "A little spark",
+      "clue": "Before holding hands became our thing, our fingertips had their first little meeting. Find the spot outside the café with an explosive name.",
+      "hints": [
+        "A memory from a slightly blurry night out.",
+        "A café on Monroe whose name sounds like something dropping from the sky.",
+        "Outside Bombs Away Cafe."
+      ],
+      "unlock": "code",
+      "code": "PINKY",
+      "codePrompt": "There’s a word hidden in your note.",
+      "lat": 44.569061, "lng": -123.279657, "radiusM": 30,
+      "photoPrompt": "Fingertips, take two.",
+      "foundLabel": "A note and a little Avatar trinket",
+      "companionCharacter": "zuko",
+      "animationCue": "success",
+      "sfxPrompt": "Soft cute cartoon poof with a tiny sparkle",
+      "sfxSeconds": 1,
+      "voiceLines": [
+        "Envelope five! Before holding hands became our thing, our fingertips had their first little meeting. Find the spot outside the café with an explosive name."
+      ]
+    },
+    {
+      "id": "badminton",
+      "number": 6,
+      "element": "air",
+      "title": "A little air time",
+      "clue": "At four, find the court where love means zero and the shuttle does the flying.",
+      "hints": [
+        "Bring your energy — this one’s a game.",
+        "Rackets, nets, and a shuttle. On campus.",
+        "The badminton courts at Dixon."
+      ],
+      "homeBackup": {
+        "title": "A little playtime",
+        "clue": "Your next clue is waiting where today began. Come home at four—there’s more to unwrap.",
+        "hints": ["Head back to where the day started.", "You’ve been here once already today.", "Back home — your people are waiting."]
+      },
+      "unlock": "manual",
+      "manualLabel": "I found everyone",
+      "lat": 44.563122, "lng": -123.278593, "radiusM": 60,
+      "photoPrompt": "The whole badminton crew.",
+      "foundLabel": "Badminton with your friends",
+      "companionCharacter": "aang",
+      "completeCharacter": "rainbow-dash",
+      "animationCue": "success",
+      "sfxPrompt": "Badminton shuttlecock thwack followed by a small happy crowd cheer",
+      "sfxSeconds": 3,
+      "voiceLines": [
+        "Envelope six! At four, find the court where love means zero and the shuttle does the flying."
+      ]
+    }
+  ],
+  "reactions": {
+    "warmer": "Ooh, you’re getting warmer…",
+    "colder": "Hmm, a little colder.",
+    "here": "You’re right here!",
+    "unlock": "Paw-some! Envelope {n} unlocked!",
+    "wrongCode": "Mrrp? Try that word again."
+  },
+  "sharedSfx": {
+    "purr": { "prompt": "Short soft cat purr pulse, cute", "seconds": 1 },
+    "unlock": { "prompt": "Tiny playful cartoon roar that turns into a bright chime", "seconds": 2 },
+    "tap": { "prompt": "Very soft paw tap on paper, subtle UI click", "seconds": 0.5 },
+    "wrong": { "prompt": "Confused cute kitten mrrp sound", "seconds": 1 }
+  },
+  "letter": {
+    "heading": "For you, Akhi",
+    "body": "Write your letter here in the organizer.\n\nThis is a placeholder — open #organizer to replace it with your own words before Monday.",
+    "signoff": "Love, me"
+  },
+  "friday": {
+    "teaser": "Friday, Nov 13: keep your afternoon free. We’re going on a little trip — dress comfy, and bring your appetite.",
+    "revealAfterFinale": true
+  },
+  "talk": { "name": "Sahith", "agentId": "agent_9301m6q7e1drf8kajknmf14cm5tq" },
+  "lunchMode": "qdoba",
+  "lunchPlace": "",
+  "gatheringMode": "dixon"
+}

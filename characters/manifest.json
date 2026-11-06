@@ -1,0 +1,84 @@
+{
+  "version": "codex-characters-20261104-v1",
+  "files": [
+    "characters/character-player.js",
+    "characters/characters.css",
+    "characters/manifest.json",
+    "characters/art/aang-sheet.png",
+    "characters/art/applejack-sheet.png",
+    "characters/art/fluttershy-sheet.png",
+    "characters/art/katara-sheet.png",
+    "characters/art/leopard.svg",
+    "characters/art/pinkie-pie-sheet.png",
+    "characters/art/rainbow-dash-sheet.png",
+    "characters/art/rarity-sheet.png",
+    "characters/art/toph-sheet.png",
+    "characters/art/twilight-sparkle-sheet.png",
+    "characters/art/zuko-sheet.png",
+    "characters/art/dora-boots-sheet.png"
+  ],
+  "sheet": {
+    "columns": 3,
+    "rows": 2,
+    "frames": 6,
+    "cellAspectRatio": 1
+  },
+  "characters": {
+    "aang": {
+      "asset": "characters/art/aang-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "applejack": {
+      "asset": "characters/art/applejack-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "fluttershy": {
+      "asset": "characters/art/fluttershy-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "katara": {
+      "asset": "characters/art/katara-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "pinkie-pie": {
+      "asset": "characters/art/pinkie-pie-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "rainbow-dash": {
+      "asset": "characters/art/rainbow-dash-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "rarity": {
+      "asset": "characters/art/rarity-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "toph": {
+      "asset": "characters/art/toph-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "twilight-sparkle": {
+      "asset": "characters/art/twilight-sparkle-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "zuko": {
+      "asset": "characters/art/zuko-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "leopard": {
+      "asset": "characters/art/leopard.svg",
+      "format": "layered-svg"
+    }
+  },
+  "voiceStatus": "Pending voice IDs from user tomorrow; no API calls made.",
+  "introVisualStatus": "Production art ready; spoken audio and final video timing pending voice IDs."
+}
