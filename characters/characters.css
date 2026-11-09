@@ -1,0 +1,52 @@
+/* All motion stays inside Claude's existing character slot. */
+.ll-stage{position:absolute;inset:0;isolation:isolate;pointer-events:none;contain:layout paint;overflow:hidden;border-radius:inherit;--ll-accent:#d8ac5f}
+.ll-actor{position:absolute;bottom:0;left:0;width:100%;height:100%;transform-origin:50% 88%;will-change:auto}
+.ll-main>img,.ll-main>.ll-leopard{display:block;position:absolute;width:100%;height:auto;aspect-ratio:460/330;bottom:0;object-fit:contain;overflow:visible}
+.ll-pair .ll-main{width:57%;height:72%;left:-6%;bottom:0;z-index:2}
+.ll-pair .ll-guest{width:72%;height:98%;left:32%;bottom:1%;z-index:1}
+.ll-pair .ll-main .ll-leopard{overflow:hidden}
+.ll-sprite{position:absolute;width:100%;height:auto;aspect-ratio:1;left:0;bottom:0;background-repeat:no-repeat;background-size:300% 200%;background-position:0 0;filter:drop-shadow(0 3px 2px #4935200a);mask-image:linear-gradient(transparent 0%,#000 3%,#000 98%,transparent);-webkit-mask-image:linear-gradient(transparent 0%,#000 3%,#000 98%,transparent)}
+.ll-missing{display:none}
+.ll-head,.ll-tail,.ll-mouth{transform-box:fill-box;transform-origin:center;}
+.ll-tail{transform-origin:8% 65%}.ll-head{transform-origin:50% 90%}.ll-mouth{transform-origin:50% 30%}
+.ll-speaking .ll-mouth{animation:ll-talk .22s ease-in-out infinite alternate}
+.ll-speaking .ll-tail{animation:ll-tail-talk 1s ease-in-out infinite alternate}
+.ll-stage[data-cue=enter] .ll-actor{animation:ll-hello .68s ease-out both}
+.ll-stage[data-cue=hint] .ll-actor{animation:ll-nod .58s ease-in-out both}
+.ll-stage[data-cue=error] .ll-actor{animation:ll-tilt .65s ease-in-out both}
+.ll-stage[data-cue=warmer] .ll-main{animation:ll-purr .66s ease-in-out both}
+.ll-stage[data-cue=success] .ll-main{animation:ll-hop 1.25s ease-in-out both}
+.ll-stage[data-cue=success] .ll-tail{animation:ll-tail-talk .44s ease-in-out 3 alternate}
+.ll-fx{position:absolute;inset:0;z-index:4;opacity:0}
+.ll-fx i{position:absolute;left:18%;top:28%;width:6%;height:6%;max-width:9px;max-height:9px;background:var(--ll-accent);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);opacity:0}
+.ll-fx i:nth-child(2){left:75%;top:18%}.ll-fx i:nth-child(3){left:45%;top:8%}.ll-fx i:nth-child(4){left:12%;top:60%}.ll-fx i:nth-child(5){left:86%;top:48%}
+.ll-stage[data-cue=success] .ll-fx,.ll-stage[data-cue=warmer] .ll-fx{opacity:1}
+.ll-stage[data-cue=success] .ll-fx i{animation:ll-sparkle 1.3s ease-out both}
+.ll-stage[data-cue=success] .ll-fx i:nth-child(2){animation-delay:.12s}.ll-stage[data-cue=success] .ll-fx i:nth-child(3){animation-delay:.23s}.ll-stage[data-cue=success] .ll-fx i:nth-child(4){animation-delay:.3s}.ll-stage[data-cue=success] .ll-fx i:nth-child(5){animation-delay:.2s}
+.ll-stage[data-cue=warmer] .ll-fx i{animation:ll-sparkle .65s ease-out both}
+.ll-group .ll-main{width:36%;height:90%;left:32%;bottom:0;z-index:3}
+.ll-group .ll-guest{width:29%;height:100%;left:0%;bottom:0;z-index:1}
+.ll-group .ll-guest:nth-of-type(3){left:18%}.ll-group .ll-guest:nth-of-type(4){left:52%}.ll-group .ll-guest:nth-of-type(5){left:71%}
+.s-xs .ll-pair .ll-main,.s-sm .ll-pair .ll-main{display:none}
+.s-xs .ll-pair .ll-guest,.s-sm .ll-pair .ll-guest{width:100%;height:100%;left:0;bottom:0}
+.ll-paused *{animation-play-state:paused!important}
+.ll-calm *{animation:none!important;transition:none!important}
+.ll-calm .ll-fx{opacity:0!important}
+@keyframes ll-talk{from{transform:scaleY(.7)}to{transform:scaleY(1.28)}}
+@keyframes ll-tail-talk{from{transform:rotate(-5deg)}to{transform:rotate(7deg)}}
+@keyframes ll-hello{0%{opacity:.3;transform:translateY(7%) scale(.94)}70%{opacity:1;transform:translateY(-2%) scale(1.02)}100%{opacity:1;transform:none}}
+@keyframes ll-nod{0%,100%{transform:none}35%{transform:rotate(-3deg) translateY(2%)}70%{transform:rotate(2deg)}}
+@keyframes ll-tilt{0%,100%{transform:none}35%,65%{transform:rotate(-5deg)}}
+@keyframes ll-purr{0%,100%{transform:scale(1)}45%{transform:scale(1.045)}}
+@keyframes ll-hop{0%,100%{transform:none}20%{transform:translateY(2%) scaleY(.96)}45%{transform:translateY(-6%) rotate(-2deg)}65%{transform:translateY(1%)}80%{transform:translateY(-2%) rotate(1deg)}}
+@keyframes ll-sparkle{0%,100%{opacity:0;transform:scale(.3) translateY(4px)}25%,65%{opacity:1;transform:scale(1) translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){.ll-stage *{animation:none!important;transition:none!important}.ll-fx{opacity:0!important}}
+
+/* Akhila's real 3D location marker. Her feet replace the old circular badge. */
+.me.akhi-personal-marker{width:112px;height:154px;display:flex;align-items:flex-end;justify-content:center;pointer-events:none}
+.me .akhi-map-avatar-slot{width:112px!important;height:154px!important;position:relative;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;pointer-events:none}
+.akhi-avatar{position:absolute;inset:0;contain:layout paint;pointer-events:none}
+.akhi-avatar-canvas,.akhi-avatar-poster,.akhi-avatar-loading{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.me.akhi-personal-marker .slot-ph{display:none}
+
+.akhi-avatar-poster[hidden]{display:none}

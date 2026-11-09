@@ -1,0 +1,61 @@
+/* Aged paper and a small, layered owl-post delivery. Scoped to the final letter. */
+.letter-final-screen {
+  background-color:#abd4e8;
+  background-image:radial-gradient(ellipse at 5% 4%,#4c78aa25 0,transparent 35%),radial-gradient(ellipse at 95% 85%,#30669924 0,transparent 42%),radial-gradient(ellipse at 53% 35%,#e2f8ffaa 0,transparent 64%),repeating-linear-gradient(12deg,#152c4a03 0 1px,transparent 1px 4px);
+  color:#27394e;
+}
+.letter-final-screen .finale { background:none;max-width:760px;margin:auto;color:inherit; }
+.letter-final-screen .finale-sealed { padding-top:calc(26px + var(--safe-top));padding-bottom:calc(22px + var(--safe-bottom));gap:12px; }
+.letter-final-screen .chip {background:#c9e5ee;color:#39596d;border:1px solid #79a7bd80;box-shadow:none;}
+.letter-final-screen .paw-row {color:#5b8aa4;}
+.letter-final-screen .sealed-card {background:none;box-shadow:none;border:0;padding:8px 0 0;gap:0;}
+.letter-final-screen .sealed-card h1 {font:normal 30px/1.2 Georgia,'Times New Roman',serif;max-width:330px;margin:0 auto;color:#27394e;}
+.letter-final-screen #fin-h:focus {outline:none;}
+.letter-delivery {width:100%;max-width:420px;margin:0 auto;position:relative;isolation:isolate;}
+.letter-trigger {appearance:none;display:flex;flex-direction:column;align-items:center;width:100%;padding:0 0 12px;border:0;background:transparent;color:#294362;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;}
+.letter-trigger:disabled {cursor:default;opacity:1;}
+.letter-trigger:focus-visible {outline:2px solid #2b4b6e;outline-offset:5px;border-radius:20px;}
+.letter-delivery-picture {display:block;width:100%;aspect-ratio:520/380;overflow:visible;}
+.owl-letter-art {display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 10px 9px #17355a13);}
+.letter-delivery-label {font:italic 20px/1.35 Georgia,'Times New Roman',serif;position:relative;margin-top:-4px;}
+.letter-delivery-hint {font:13px/1.5 var(--body,system-ui);color:#36516e;min-height:22px;margin:0;text-align:center;}
+.owl-carrier,.mail-envelope {transform-box:view-box;transform-origin:260px 280px;}
+.owl-head,.owl-body,.owl-feet {opacity:0;transform:translateY(65px) scale(.8);transform-box:fill-box;transform-origin:50% 100%;transition:transform .42s cubic-bezier(.2,.75,.2,1),opacity .28s;}
+.owl-wing-left,.owl-wing-right {opacity:0;transform-box:view-box;transition:transform .48s cubic-bezier(.2,.8,.2,1),opacity .24s;}
+.owl-wing-left {transform-origin:216px 235px;transform:rotate(65deg) scale(.2);}
+.owl-wing-right {transform-origin:304px 235px;transform:rotate(-65deg) scale(.2);}
+.letter-trigger:focus-visible .owl-head,.letter-trigger:focus-visible .owl-body,.letter-trigger:focus-visible .owl-feet,
+.letter-delivery:not([data-phase="sealed"]) :is(.owl-head,.owl-body,.owl-feet) {opacity:1;transform:none;}
+.letter-trigger:focus-visible :is(.owl-wing-left,.owl-wing-right),.letter-delivery:not([data-phase="sealed"]) :is(.owl-wing-left,.owl-wing-right) {opacity:1;transform:none;}
+@media(hover:hover) {
+  .letter-trigger:hover :is(.owl-head,.owl-body,.owl-feet,.owl-wing-left,.owl-wing-right) {opacity:1;transform:none;}
+  .letter-trigger:hover .letter-delivery-label {color:#8e3c32;}
+}
+.letter-delivery[data-phase="flying"] .owl-wing-left,.letter-delivery[data-phase="drop"] .owl-wing-left {animation:owlWingL .38s ease-in-out infinite alternate;}
+.letter-delivery[data-phase="flying"] .owl-wing-right,.letter-delivery[data-phase="drop"] .owl-wing-right {animation:owlWingR .38s ease-in-out infinite alternate;}
+@keyframes owlWingL {from{transform:rotate(-14deg)}to{transform:rotate(23deg)}}
+@keyframes owlWingR {from{transform:rotate(14deg)}to{transform:rotate(-23deg)}}
+.mail-paper {opacity:0;transform-box:view-box;transform-origin:260px 212px;transition:transform .65s ease,opacity .25s;}
+.mail-flap {transform-box:fill-box;transform-origin:50% 0%;transition:transform .6s cubic-bezier(.2,.7,.25,1);}
+.mail-seal {transition:opacity .2s,transform .45s;transform-box:fill-box;transform-origin:center;}
+.letter-delivery[data-phase="opening"] .mail-flap,.letter-delivery[data-phase="delivered"] .mail-flap {transform:scaleY(-1);}
+.letter-delivery[data-phase="opening"] .mail-seal,.letter-delivery[data-phase="delivered"] .mail-seal {opacity:0;transform:translateY(12px) rotate(15deg);}
+.letter-delivery[data-phase="opening"] .mail-paper,.letter-delivery[data-phase="delivered"] .mail-paper {opacity:1;transform:translateY(-90px);}
+.letter-final-screen .letter {position:relative;background-color:#c8e9f7;background-image:radial-gradient(ellipse at 1% 40%,#4489b721,transparent 36%),radial-gradient(ellipse at 100% 95%,#3a80b021,transparent 48%),repeating-linear-gradient(4deg,#15406204 0 1px,transparent 1px 5px);border:1px solid #6ea1bd80;border-radius:4px 9px 6px 3px;padding:36px 28px;box-shadow:0 2px 3px #213a5515,0 14px 35px #213a5520,inset 0 0 32px #4b8ab919;color:#223449;}
+.letter-final-screen .letter::before {content:'';position:absolute;inset:9px;border:1px solid #6b9cb635;pointer-events:none;}
+.letter-final-screen .letter h1 {font:normal 35px/1.2 Georgia,'Times New Roman',serif;color:#223449;}
+.letter-final-screen .letter .body p {font:18px/1.8 Georgia,'Times New Roman',serif;color:#223449;}
+.letter-final-screen .letter .sign {font:italic 22px/1.5 Georgia,'Times New Roman',serif;color:#375274;}
+.letter-final-screen .btn-ghost {color:#385572;}
+.letter-final-screen .letter:not([data-still]) {animation:letterArrives .65s cubic-bezier(.2,.8,.2,1) both;}
+@keyframes letterArrives {from{opacity:0;transform:translateY(22px) rotate(-.5deg)}to{opacity:1;transform:none}}
+@media(max-width:430px) {
+ .letter-final-screen .finale-sealed {gap:9px;}
+ .letter-final-screen .sealed-card h1 {font-size:27px;max-width:290px;}
+ .letter-delivery {max-width:350px;}
+ .letter-final-screen .letter {padding:30px 24px;}
+}
+.calm .letter-final-screen *,.calm .letter-final-screen *::before {animation:none!important;transition:none!important;}
+@media(prefers-reduced-motion:reduce) {.letter-final-screen *,.letter-final-screen *::before {animation:none!important;transition:none!important;}}
+
+.letter-final-screen .letter .body{overflow-wrap:break-word;}

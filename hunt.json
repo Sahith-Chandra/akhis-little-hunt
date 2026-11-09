@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "title": "Akhi’s Little Hunt",
+  "birthday": {
+    "name": "Akhi",
+    "fullName": "Akhila",
+    "age": 23,
+    "date": "2026-11-09"
+  },
+  "intro": {
+    "poster": "media/dora-birthday-intro-poster.png",
+    "video": "media/dora-birthday-intro.mp4",
+    "captions": "media/dora-birthday-intro.vtt",
+    "heading": "A birthday message for Akhila · 23",
+    "transcript": [
+      {
+        "speaker": "Dora",
+        "voice": "you",
+        "line": "¡Hola, Akhila! Happy 23rd birthday!"
+      },
+      {
+        "speaker": "Dora",
+        "voice": "you",
+        "line": "Every little step has helped you grow into who you are today. And there are so many wonderful adventures still ahead."
+      },
+      {
+        "speaker": "Dora",
+        "voice": "you",
+        "line": "Today is all about you!"
+      },
+      {
+        "speaker": "Dora",
+        "voice": "you",
+        "line": "Ready, Akhila? Let’s go on an adventure!"
+      }
+    ]
+  },
+  "welcome": {
+    "companionCharacter": "aang",
+    "animationCue": "enter",
+    "voiceLines": [
+      "Hi Akhi! Happy birthday! Keep your first envelope close, and tap for a hint whenever you need one."
+    ]
+  },
+  "stops": [
+    {
+      "id": "room",
+      "home": true,
+      "number": 1,
+      "element": null,
+      "title": "A small beginning",
+      "clue": "A little golden surprise is stowed away among many cherished memories of you and your significant other.",
+      "hints": [
+        "Your first surprise is hiding in my room.",
+        "Something small and shiny is waiting in a case I made for you.",
+        "Look in the box that holds our memories for your handmade ring case."
+      ],
+      "lat": null,
+      "lng": null,
+      "radiusM": 40,
+      "photoPrompt": "Your new rings and the case I made for you.",
+      "foundLabel": "Gold rings in a handmade case",
+      "companionCharacter": "toph",
+      "animationCue": "success",
+      "sfxPrompt": "Soft pillow whoosh followed by a gentle magical sparkle, cozy and short",
+      "sfxSeconds": 2,
+      "voiceLines": [
+        "Envelope one! A little golden surprise is stowed away among many cherished memories of you and your significant other."
+      ]
+    },
+    {
+      "id": "t4",
+      "number": 2,
+      "element": "water",
+      "title": "Follow the water",
+      "clue": "Royalty stands in for something usually grey. Winter is in my name, and you first discovered me last year. Figure out where to find me.",
+      "hints": [
+        "This one is something to drink.",
+        "Your favorite boba place — the one with a number in its name.",
+        "T4: Wintermelon Milk Tea with royal tea instead of Earl Grey."
+      ],
+      "lat": 44.5498805,
+      "lng": -123.3118972,
+      "radiusM": 40,
+      "photoPrompt": "Cheers with your boba.",
+      "foundLabel": "Your usual T4 order",
+      "companionCharacter": "katara",
+      "animationCue": "success",
+      "sfxPrompt": "Playful boba straw slurp with ice cubes rattling in a plastic cup",
+      "sfxSeconds": 2,
+      "voiceLines": [
+        "Envelope two! Royalty stands in for something usually grey. Winter is in my name, and you first discovered me last year. Figure out where to find me."
+      ]
+    },
+    {
+      "id": "class",
+      "number": null,
+      "intermission": true,
+      "title": "Class break",
+      "clue": "Even an Avatar has classes. Your adventure continues afterward.",
+      "resumeLabel": "I’m out of class",
+      "resumeNote": "The map is snoozing. The hunt picks back up around 2. No rush.",
+      "companionCharacter": "aang",
+      "animationCue": "idle",
+      "sfxPrompt": "Soft, sleepy little leopard snore, cute and quiet",
+      "sfxSeconds": 3,
+      "voiceLines": [
+        "Go be responsible, I’ll nap till 2."
+      ],
+      "chip": "Intermission · 12–2",
+      "footnote": "Someone might be waiting outside…"
+    },
+    {
+      "id": "lunch",
+      "number": 3,
+      "element": null,
+      "title": "An envelope from your people",
+      "clue": "I’m spelled with five letters, I serve meals in a black plastic bowl, and I don’t believe in charging you extra for the green stuff. What am I?",
+      "hints": [
+        "I live on Monroe.",
+        "You build your bowl down the line, one ingredient at a time.",
+        "Qdoba on Monroe."
+      ],
+      "lunchAlternative": {
+        "pizza": {
+          "clue": "Even an Avatar needs to eat. Your friends picked a slice of something you love — follow them to {place}.",
+          "hints": [
+            "Your friends know you’re hungry after class.",
+            "Round, cheesy, cut into triangles.",
+            "Pizza at {place}."
+          ]
+        }
+      },
+      "lat": 44.568136,
+      "lng": -123.27539,
+      "radiusM": 40,
+      "photoPrompt": "The lunch crew.",
+      "foundLabel": "Lunch with friends",
+      "companionCharacter": "aang",
+      "completeCharacter": "applejack",
+      "animationCue": "success",
+      "sfxPrompt": "Sizzling skillet on a hot grill, short and appetizing",
+      "sfxSeconds": 2,
+      "voiceLines": [
+        "Envelope three — from your people! I’m spelled with five letters, I serve meals in a black plastic bowl, and I don’t believe in charging you extra for the green stuff. What am I?"
+      ]
+    },
+    {
+      "id": "manicure",
+      "number": null,
+      "title": "Birthday bonus",
+      "chip": "Bonus clue",
+      "clue": "I have ten tips but never speak. I get filed down, but I’m not a document. I might get a French look without ever leaving Oregon. What am I?",
+      "hints": [
+        "_ _ _ i _ _ _ _",
+        "(your predator)i _ _ _ _",
+        "mani(“_ _ _ _” to cancer)"
+      ],
+      "companionCharacter": "rarity",
+      "animationCue": "idle",
+      "voiceLines": [
+        "I have ten tips but never speak. I get filed down, but I’m not a document. I might get a French look without ever leaving Oregon. What am I?"
+      ],
+      "foundLabel": "A birthday manicure",
+      "photoPrompt": "Show off your fresh new nails."
+    },
+    {
+      "id": "tree",
+      "number": 4,
+      "element": "earth",
+      "title": "A place with roots",
+      "clue": "We’ve both called this place home. Even though you left, one of your favorites still stands here, holding down its roots. Find me.",
+      "hints": [
+        "Somewhere you both used to live.",
+        "The Retreat — and something tall and green you love there.",
+        "Your favorite tree at the Retreat."
+      ],
+      "lat": 44.5599596,
+      "lng": -123.2911573,
+      "radiusM": 30,
+      "photoPrompt": "You, your tree, and your new spotted friend.",
+      "foundLabel": "Leopard plush",
+      "companionCharacter": "toph",
+      "animationCue": "success",
+      "sfxPrompt": "Leaves rustling in a light breeze with soft birdsong",
+      "sfxSeconds": 3,
+      "voiceLines": [
+        "Envelope four! We’ve both called this place home. Even though you left, one of your favorites still stands here, holding down its roots. Find me."
+      ]
+    },
+    {
+      "id": "badminton",
+      "number": 5,
+      "element": "air",
+      "title": "A little air time",
+      "clue": "At five, find the court where love means zero and the shuttle does the flying.",
+      "hints": [
+        "Bring your energy — this one’s a game.",
+        "Rackets, nets, and a shuttle. On campus.",
+        "The badminton courts at Dixon."
+      ],
+      "homeBackup": {
+        "title": "A little playtime",
+        "clue": "Your next clue is waiting where today began. Come home at five—there’s more to unwrap.",
+        "hints": [
+          "Head back to where the day started.",
+          "You’ve been here once already today.",
+          "Back home — your people are waiting."
+        ]
+      },
+      "lat": 44.563122,
+      "lng": -123.278593,
+      "radiusM": 60,
+      "photoPrompt": "The whole badminton crew.",
+      "foundLabel": "Badminton with your friends",
+      "companionCharacter": "aang",
+      "completeCharacter": "rainbow-dash",
+      "animationCue": "success",
+      "sfxPrompt": "Badminton shuttlecock thwack followed by a small happy crowd cheer",
+      "sfxSeconds": 3,
+      "voiceLines": [
+        "Envelope five! At five, find the court where love means zero and the shuttle does the flying."
+      ]
+    },
+    {
+      "id": "bombs-away",
+      "number": 6,
+      "element": null,
+      "title": "A little spark",
+      "clue": "Before holding hands became our thing, our fingertips had their first little meeting. Find the spot outside the café.",
+      "hints": [
+        "Think back to our first little fingertip moment.",
+        "A café on Monroe whose name sounds like something dropping from the sky.",
+        "Outside Bombs Away Cafe."
+      ],
+      "lat": 44.569061,
+      "lng": -123.279657,
+      "radiusM": 30,
+      "photoPrompt": "Your new bookmark, right where our fingertips first met.",
+      "foundLabel": "Your Harry Potter bookmark",
+      "companionCharacter": "zuko",
+      "animationCue": "success",
+      "sfxPrompt": "Soft cute cartoon poof with a tiny sparkle",
+      "sfxSeconds": 1,
+      "voiceLines": [
+        "Envelope six! Before holding hands became our thing, our fingertips had their first little meeting. Find the spot outside the café."
+      ]
+    }
+  ],
+  "reactions": {
+    "warmer": "Ooh, you’re getting warmer…",
+    "colder": "Hmm, a little colder.",
+    "here": "You’re in the right area!",
+    "unlock": "Paw-some! Envelope {n} found!"
+  },
+  "sharedSfx": {
+    "purr": {
+      "prompt": "Short soft cat purr pulse, cute",
+      "seconds": 1
+    },
+    "unlock": {
+      "prompt": "Tiny playful cartoon roar that turns into a bright chime",
+      "seconds": 2
+    },
+    "tap": {
+      "prompt": "Very soft paw tap on paper, subtle UI click",
+      "seconds": 0.5
+    }
+  },
+  "letter": {
+    "heading": "For you, Akhi",
+    "body": "Write your letter here in the organizer.\n\nThis is a placeholder — open #organizer to replace it with your own words before Monday.",
+    "signoff": "Love, me",
+    "sealed": {
+      "salt": "WpM2vvbcjO/zfjrE5e6aSA==",
+      "iv": "eWoE2ODGHeToh3Uh",
+      "iterations": 310000,
+      "data": "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"
+    }
+  },
+  "talk": {
+    "name": "Sahith",
+    "agentId": "agent_9301m6q7e1drf8kajknmf14cm5tq"
+  },
+  "lunchMode": "qdoba",
+  "lunchPlace": "",
+  "gatheringMode": "dixon"
+}

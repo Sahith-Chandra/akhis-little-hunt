@@ -1,0 +1,113 @@
+{
+  "version": "codex-characters-20261109-hedwig-letter-v6",
+  "files": [
+    "characters/character-player.js",
+    "characters/characters.css",
+    "characters/manifest.json",
+    "characters/art/aang-sheet.png",
+    "characters/art/applejack-sheet.png",
+    "characters/art/fluttershy-sheet.png",
+    "characters/art/katara-sheet.png",
+    "characters/art/leopard.svg",
+    "characters/art/pinkie-pie-sheet.png",
+    "characters/art/rainbow-dash-sheet.png",
+    "characters/art/rarity-sheet.png",
+    "characters/art/toph-sheet.png",
+    "characters/art/twilight-sparkle-sheet.png",
+    "characters/art/zuko-sheet.png",
+    "characters/art/dora-boots-sheet.png",
+    "characters/akhi-avatar/signals.js",
+    "characters/akhi-avatar/model.js",
+    "characters/akhi-avatar/marker.js",
+    "characters/akhi-avatar/poster.png",
+    "characters/akhi-avatar/vendor/three.module.min.js",
+    "characters/akhi-avatar/idle-wave.js",
+    "characters/letter-delivery/art.js",
+    "characters/letter-delivery/index.js",
+    "characters/letter-delivery/delivery.css"
+  ],
+  "sheet": {
+    "columns": 3,
+    "rows": 2,
+    "frames": 6,
+    "cellAspectRatio": 1
+  },
+  "characters": {
+    "aang": {
+      "asset": "characters/art/aang-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "applejack": {
+      "asset": "characters/art/applejack-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "fluttershy": {
+      "asset": "characters/art/fluttershy-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "katara": {
+      "asset": "characters/art/katara-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "pinkie-pie": {
+      "asset": "characters/art/pinkie-pie-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "rainbow-dash": {
+      "asset": "characters/art/rainbow-dash-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "rarity": {
+      "asset": "characters/art/rarity-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "toph": {
+      "asset": "characters/art/toph-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "twilight-sparkle": {
+      "asset": "characters/art/twilight-sparkle-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "zuko": {
+      "asset": "characters/art/zuko-sheet.png",
+      "frames": 6,
+      "format": "png-sprite-sheet"
+    },
+    "leopard": {
+      "asset": "characters/art/leopard.svg",
+      "format": "layered-svg"
+    }
+  },
+  "voiceStatus": "Pending voice IDs from user tomorrow; no API calls made.",
+  "introVisualStatus": "Production art ready; spoken audio and final video timing pending voice IDs.",
+  "personalAvatar": {
+    "name": "Akhila",
+    "format": "animated-3d-webgl",
+    "entry": "characters/akhi-avatar/marker.js",
+    "poster": "characters/akhi-avatar/poster.png",
+    "outfit": "Charcoal hoodie, black wide-leg jeans, white sneakers, beige beanie; long wavy dark hair and brown skin.",
+    "style": "Soft collectible chibi doll; rounded proportions, closed smile, sculpted waves, pillowy clothing, soft studio lighting.",
+    "motion": "Sensitive accumulated slow walking, GPS speed/heading support, running for fast travel, arrival wave, and calm mode.",
+    "idleWaveIntervalSeconds": [
+      12,
+      20
+    ],
+    "hairDetails": "Long wavy dark hair and two short temple curls; front roots tuck beneath the folded beanie edge."
+  },
+  "letterDelivery": {
+    "entry": "characters/letter-delivery/index.js",
+    "style": "characters/letter-delivery/delivery.css",
+    "theme": "Snowy owl post on aged parchment",
+    "interaction": "Hover/focus preview; one tap/click delivers and reveals the existing organizer letter."
+  }
+}
